@@ -1,13 +1,8 @@
-<script language="JavaScript">
-  <!--hide
-    var password
-    var pass1="123";
-    password=prompt('Enter Password to view page'.' ');
-    if (password==pass1)
-    alert('Correct password, click OK.')
-    else
-    {
-      window.location="http://pupnums.github.io/index5.html"
-    }
-    //-->
-</script>
+<?php
+
+if ($_POST["password"] == 12345) {
+page goes here
+}
+else {
+include 'errorpage'
+?>

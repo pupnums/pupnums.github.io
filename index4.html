@@ -1,8 +1,14 @@
-<?php
-
-if ($_POST["password"] == 12345) {
-page goes here
+<body>
+Enter password: <input id='password' type='text'  />
+<a href="your_image_portfolio.html" onclick="javascript:return validatePass()">enter your password and click this</a>
+<script>
+function validatePass(){
+    if(document.getElementById('password').value == 'yourBussinessCardPassword'){
+        return true;
+    }else{
+        alert('wrong password!!');
+        return false;
+    }
 }
-else {
-include 'errorpage'
-?>
+</script>
+</body>
